@@ -22,8 +22,10 @@ function imc() {
         /* Criando variável para cálculo do resultado. Função toFixed(2) realiza o arredondamento para duas casas decimais */
         const valorImc = (peso.value / (altura.value * altura.value)).toFixed(2);
 
+        /* Criando variável da classificação. */
         let classificacao = "";
 
+        /* Testando valores do IMC. */
         if (valorImc < 18.5) {
             classificacao = 'abaixo do peso.';
         }
@@ -51,6 +53,7 @@ function imc() {
         /* Escrevendo o resultado na saída. */
         //resultado.textContent = valorImc;
 
+        /* Escrevendo o resultado com tremplateString. */
         resultado.textContent = `${nome.value}, seu IMC é de ${valorImc} e você está ${classificacao}`;
     }
 
