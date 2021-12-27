@@ -12,6 +12,7 @@ const resultado = document.getElementById('resultado');
 /* Adicionando listener no clique do botão. */
 calcular.addEventListener('click', imc);
 
+/* Criando função que calcula o IMD. */
 function imc() {
     /* Teste de Clique. */
     // alert ('Test click');
